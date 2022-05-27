@@ -1,4 +1,4 @@
-# WirelessEPD
+# WMNS-EPD
 Simple Wi-Fi/BLE enabled e-paper display. Designed for displaying real-time sensor data. Extention of [WMNS](https://github.com/edward62740/Wireless-Mesh-Network-System).</br></br>
 
 ![20220527_134201](https://user-images.githubusercontent.com/71886023/170638261-46c22510-fc7b-4deb-81cb-61a56039af45.jpg)
