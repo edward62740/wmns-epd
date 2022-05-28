@@ -72,6 +72,12 @@ void loop()
 
     while (1)
     {
+        if (WiFi.status() != WL_CONNECTED)
+        {
+            WiFi.disconnect();
+            WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+            vTaskDelay(2000);
+        }
         unsigned long currentMillis = millis();
         if ((currentMillis - previousMillis >= 300000) || boot)
         {
