@@ -257,11 +257,13 @@ void loop()
             digitalWrite(33, !digitalRead(33));
             display.display();
             digitalWrite(33, !digitalRead(33));
+            display.powerOff();
         }
         // yield();
         String keepalive = "from(bucket: \"MESH\") |> range(start: -0m) |> filter(fn: (r) => r._measurement == \"NULL\") |> filter(fn: (r) => r.UID == \"NULL\") |> filter(fn: (r) => r._field == \"NULL\") |> last()";
         FluxQueryResult l = client.query(keepalive);
         delay(5000);
         digitalWrite(33, !digitalRead(33));
+        
     }
 }
