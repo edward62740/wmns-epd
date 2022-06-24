@@ -342,7 +342,7 @@ void GxEPD2_154_Z90c::_PowerOn()
 void GxEPD2_154_Z90c::_PowerOff()
 {
   _writeCommand(0x22);
-  _writeData(0xc3);
+  _writeData(0x03);
   _writeCommand(0x20);
   _waitWhileBusy("_PowerOff", power_off_time);
   _power_is_on = false;
